@@ -1,0 +1,222 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
+html, body
+{
+  font-family: 'Droid Arabic Kufi', sans-serif;
+  direction: rtl;
+  font-size: 12px;
+}
+
+a
+{
+  text-decoration: none;
+  color:#000;
+  font-size: 12px;
+}
+
+textarea, input
+{
+  font-size: 10px;
+}
+
+a:hover
+{
+  cursor: pointer;
+  text-decoration: none;
+}
+
+footer
+{
+  bottom: 0;
+  background:#fff;
+}
+
+form
+{
+  border:1px solid #eee;
+  padding:10px;
+  border-radius:10px;
+  margin-bottom:50px;
+}
+
+form > h1
+{
+  padding-bottom:20px;
+  text-align: center;
+}
+h1
+{
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+h5
+{
+  line-height: 30px;
+}
+.articles-section
+{
+  margin-bottom:50px;
+}
+
+.articles-section img
+{
+  border:5px solid #eee;
+}
+
+.article-writer
+{
+  margin-right:20px;
+  margin-bottom:20px;
+}
+.article-writer::before
+{
+  content:"- ";
+}
+.navbar-brand
+{
+  margin-top:-14px;
+}
+
+.article-comment
+{
+  background: #eee;
+  margin:10px 0px 10px 0px;
+}
+
+.article-comment h6
+{
+  line-height: 30px;
+}
+
+.login
+{
+  padding-top:15px;
+}
+
+textarea.form-control
+{
+  height:400px;
+  resize: none;
+  line-height: 30px;
+}
+
+.btn-default
+{
+  background: #003f9e;
+  color:#fff;
+}
+
+.btn-default:hover
+{
+  background:#044ab4;
+  color:#fff;
+}
+
+footer
+{
+  margin-top:10px;
+  padding-top:10px;
+  border-top:1px solid #eee;
+}
+.footer-center
+{
+  text-align: center;
+}
+
+#article_image
+{
+  width:100%;
+  min-height:150px;
+  position: relative;
+  cursor: pointer;
+}
+
+#article_image span
+{
+  width:100%;
+  height:150px;
+  position: absolute;
+  top:0;
+  border:1px solid #eee;
+  cursor: inherit;
+  background:url(../images/plus.png) 50% 50% no-repeat;
+}
+
+#article_image input
+{
+  width:100%;
+  height:150px;
+  position: absolute;
+  top:0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.cover
+{
+  background:url(../images/cover2.jpg) 50% 50% no-repeat;
+  min-height: 600px;
+  margin-top:-20px;
+}
+
+.cover-msg
+{
+  height: 300px;
+  margin-top: 6%;
+  background: rgba(0,0,0,0.7);
+  border-radius: 10px;
+}
+
+.cover-msg h1
+{
+  color:#fff;
+  text-align: center;
+  line-height: 40px;
+}
+
+.cover-msg h3, .cover-msg h5
+{
+  color:#eee;
+  text-align: center;
+  line-height: 40px;
+}
+
+.write-btn
+{
+  outline:none;
+  background: #f8f8f8;
+  color:#003f9e;
+  border:1px solid #eee;
+}
+
+.write-btn:active
+{
+  background: #edecec;
+  color:#003f9e;
+  border:1px solid #eee;
+}
+
+.write-btn:hover
+{
+  background: #edecec;
+  color:#003f9e;
+  border:1px solid #eee;
+}
+
+.article
+{
+  border:1px solid #eee;
+  padding:5px;
+  margin:10px 0px 10px 0px;
+}
+.article-img img
+{
+  width:100%;
+  min-height: 100px;
+  border:1px solid #eee;
+}
+
+.article-content h6
+{
+  line-height: 25px;
+}
