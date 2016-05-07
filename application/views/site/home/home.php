@@ -51,6 +51,14 @@ $articles = isset($articles) ? $articles : array();
               echo $desc.'...';
               ?>
             </h6>
+            <div class="thumbs-unit">
+              <button class="btn btn-primary" type="button" onclick="uprate(<?=$articles[$i]['id']?>,this);return false;">
+                <img src="images/up.png" style="float:left"/><span class="badge"><?=$articles[$i]['up_rate']?></span>
+              </button>
+              <button class="btn btn-primary" type="button" onclick="downrate(<?=$articles[$i]['id']?>,this);return false;">
+                <img src="images/down.png" style="float:left"/><span class="badge"><?=$articles[$i]['down_rate']?></span>
+              </button>
+            </div>
           </div>
         </div>
       </div>

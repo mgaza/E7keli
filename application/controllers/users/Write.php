@@ -34,24 +34,9 @@ class Write extends CI_Controller
 				}
 
         $this->db->insert("articles",$data);
-
-        $data['tags'] = $this->load->view('site/core/head/tags',"",true);
-        $data['includes'] = $this->load->view('site/core/head/includes',"",true);
-        $data['metadata'] = $this->load->view('site/core/head/metadata',"",true);
-
-        $viewData['head'] = $this->load->view('site/core/head/main',$data,true);
-
-				$navData['logged'] = true;
-        $data['navbar'] = $this->load->view("site/core/statics/navbar",$navData,true);
-				$link['link'] = 'article/'.$this->getLastId();
-        $msg['msg'] = $this->load->view("site/core/statics/models",$link,true);
-        $data['content'] = $this->load->view("site/users/write",$msg,true);
-        $data['includes'] = $this->load->view("site/core/body/includes","",true);
-
-        $viewData['body'] = $this->load->view("site/core/body/main",$data,true);
-
-
-        $this->load->view('site/main',$viewData);
+				$id = $this->getLastId();
+        header("Location: article/$id");
+				exit(0);
       }
       else
       {

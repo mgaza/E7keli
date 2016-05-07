@@ -220,3 +220,74 @@ footer
 {
   line-height: 25px;
 }
+
+.thumbs-unit button
+{
+  background:transparent;
+  border:none;
+  opacity: 0.7;
+  float:right;
+  outline:none;
+}
+
+.thumbs-unit button:hover
+{
+  background:transparent;
+  border:none;
+  opacity: 1;
+  outline:none;
+}
+
+.thumbs-unit button:focus
+{
+  background:transparent;
+  outline:none;
+  border:none;
+}
+
+.thumbs-unit button:active
+{
+  background:transparent;
+  outline:none;
+  border:none;
+}
+
+.thumbs-unit button:disabled
+{
+  background:transparent;
+  outline:none;
+  border:none;
+}
+
+.thumbs-unit button:disabled:hover
+{
+  background:transparent;
+  outline:none;
+  border:none;
+}
+
+.thumbs-unit button:enabled
+{
+  background:transparent;
+  outline:none;
+  border:none;
+}
+
+.thumbs-unit button:enabled:hover
+{
+  background:transparent;
+  outline:none;
+  border:none;
+}
+
+.thumbs-unit
+{
+  width:auto;
+  height:50px;
+  float:left;
+}
+.thumbs-unit img
+{
+  border:none;
+  margin-right:5px;
+}

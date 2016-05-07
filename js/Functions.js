@@ -71,5 +71,46 @@ function comment(form)
   $data = "content="+document.getElementById("comment_content").value+"&anonymous="+(document.getElementById("comment_anonymous").checked ? 1 : 0);
   $data += "&id="+form.id;
   request.post(form.action,$data);
+}
 
+function uprate($id,elem)
+{
+  elem.disabled = true;
+  smartObject = {
+    html:function(code)
+    {
+      elem.getElementsByTagName("span")[0].innerHTML = code;
+    },
+    error:function(code)
+    {
+
+    },
+    ajaxError:function()
+    {
+      alert("هناك خطأ عند محاولة الاتصال بالسيرفر !");
+    }
+  };
+  request = new SmartAjax(smartObject);
+  request.get("uprate/"+$id);
+}
+
+function downrate($id,elem)
+{
+  elem.disabled = true;
+  smartObject = {
+    html:function(code)
+    {
+      elem.getElementsByTagName("span")[0].innerHTML = code;
+    },
+    error:function(code)
+    {
+
+    },
+    ajaxError:function()
+    {
+      alert("هناك خطأ عند محاولة الاتصال بالسيرفر !");
+    }
+  };
+  request = new SmartAjax(smartObject);
+  request.get("downrate/"+$id);
 }
